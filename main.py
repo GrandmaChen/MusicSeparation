@@ -1,6 +1,6 @@
 import tensorflow as tf
 
-hello = tf.constant('Nah Im just testing')
+hello = tf.constant('Hello world!')
 
 sess = tf.Session()
 
