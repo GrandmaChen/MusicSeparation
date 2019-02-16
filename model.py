@@ -49,7 +49,6 @@ class Model:
         pred_y_src1, pred_y_src2 = self()
         return tf.reduce_mean(tf.square(self.y_src1 - pred_y_src1) + tf.square(self.y_src2 - pred_y_src2), name='loss')
 
-
     @staticmethod
     def batch_to_spec(src, num_wav):
         # shape = (batch_size, n_frames, n_freq) => (batch_size, n_freq, n_frames)
